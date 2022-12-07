@@ -18,11 +18,11 @@ def ex1(U, f, i, phi):
 
     # Q2 : Q => Puissance Reactive
     q2 = U * i * sin(radians(phi))
-    print(f'Q1 : {q2} VAR')
+    print(f'Q2 : {q2} VAR')
 
     # Q3 : S => Puissance Apparent
     q3 = sqrt(q1**2 + q2**2)
-    print(f'Q1 : {q3} VA')
+    print(f'Q3 : {q3} VA')
 
     # Q4 : Fp => Facteur de puissance
     q4 = cos( radians(phi) )
@@ -78,10 +78,10 @@ if __name__ == '__main__':
     #la réponse est toujours donnée dans l'unité demandé ex q7 en ms
 
     # ------------------- EXO1
-    # ex1(230, 50, 5.9, 49)
+    # ex1(230, 50, 1.7, 58)
 
     # ------------------- EXO2
-    ex2(7.4, 230, 50, 72, 63)
+    # ex2(1.5, 230, 50, 72, 45)
 
     # ------------------- EXO3
-    # ex3(230, 50, 140, -92)
+    ex3(230, 50, 197, -204)
